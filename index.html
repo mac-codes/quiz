@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- css links, kinda messy. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style.css">
   <title>The Ultimate Coding Quiz!!</title>
 </head>
+
 <body>
   <div class="container">
     <div class="row">
@@ -26,7 +33,7 @@
           </div>
         </div>
       </header>
-      <!-----------------------------------------------> 
+      <!----------------------------------------------->
       <main class="col-12 p-4">
         <div class="row">
           <div class="col-10">
@@ -37,21 +44,56 @@
             <!-- question bank -->
             <div id="question" class="row text-center d-none">
               <h3 class="col-12 p-4 text-center">Question:</h3>
-              <ul
-              class="list-group">
-            </ul>
-            <h4 id="wrong" class="col-12 p-2">
-            </h4>
+              <ul class="list-group">
+              </ul>
+              <h4 id="wrong" class="col-12 p-2">
+              </h4>
             </div>
-            <!-- Highscore? -->
-
+            <!-- Highscore?
+            <div id="highscore" class="row tex-center d-none">
+              <h4 id="new-high" class="col-12 p-4 text-center" style="font-family: 'Russo One', sans-serif;">
+                NEW HIGHSCORE!
+              </h4>
+                <h3 class="col-12 p-2 text-center">SCORE: <span></span></h3>
+                <div class="col-4"></div>
+                <form id="highscore-form" class="col-3" method="POST">
+                  <label  class="mb-3" for="initials">Initials:</label>
+                  <input type="text" placeholder="ABC" name="initials" id="initials-text" max-length="3" class="mb-4">
+                  <button class="btn btn-primary">Submit your Highscore!</button>
+                  <button class="btn btn-primary" id="home-button">HOME</button>
+              </form>
+                <div class="col-3">
+                </div>
+            </div>
           </div>
         </div>
-      </main>
+      
+      leaderboard 
+      <table id="leaderboard" class="table table-hover d-none">
+        <thread class="table-light">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Initials</th>
+            <th scope="col">Score</th>
+          </tr>
+        </thread>
+        <tbody id="leaderboard-body" class="table-secondary"></tbody>
+        <button id="clear-scores" class="btn btn-primary d-none">Clear Highscores</button>
+      </table>
     </div>
+    <div class="col"></div>
   </div>
-
+  footer 
+  <footer id="footer" class="row mt-5 p-2 text-center fixed-bottom">
+    <div class="row">
+        <div class="col"></div>
+        <article class="col-auto mb-5 pb-5"><h5>Made with <3 by McKenna Lawson</h5></article>
+        <div class="col"></div>
+    </div>
+  </footer>
+      </main> -->
 
   <script src="./assets/script.js"></script>
 </body>
+
 </html>
